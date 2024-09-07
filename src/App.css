@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
 #root {
   min-height: 100vh;
   display: flex;
@@ -6,12 +10,6 @@
   justify-content: center;
   background-color: #f6f5f7;
   font-family: Helvetica, Arial, sans-serif;
-}
-
-/* hyj */
-* {
-  margin: 0px;
-  box-sizing: border-box;
 }
 html,
 body {
@@ -68,9 +66,15 @@ body {
  border-radius: 5px;
  border: none;
  outline: none;
- box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.25) inset;
- box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25) inset;
+ /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.25) inset; */
+ /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25) inset; */
+ box-shadow: 0 0 0 2px transparent, 0 0 0 2px transparent;
+ transition: all 0.2s ease-in-out;
 }
+.logup-form input:focus{
+  box-shadow: 0 0 0 4px white, 0 0 0 7px #ff4b2b;
+}
+
 .signup form h1, .sign-in form h1{
   font-weight: bold;
   margin: 0;
@@ -98,7 +102,7 @@ body {
   margin: 20px;
   border-radius: 20px;
   border: 1px solid #ff4b2b;
-  outline: none;
+  /* outline: none; */
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;

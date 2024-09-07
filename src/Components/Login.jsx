@@ -3,8 +3,6 @@ import { FaFacebookF, FaGoogle, FaLinkedinIn  } from "react-icons/fa6";
 
 export default function Login() {
 
-    const subtn = document.getElementById("sign-Up");
-    const sibtn = document.getElementById("sign-In");
     const main = document.getElementById("logw");
 
     const sua = () =>{
@@ -51,7 +49,7 @@ export default function Login() {
                     <input type="email" name='email' placeholder='Email' required/>
                     <input type="password" name='password' placeholder='Password' required/>
                     <a href="#" className="pswf"> Forgotten Your Password?</a>
-                    <a className="atc" onClick={sua}>Don't have an account? <span>Register</span></a>
+                    <a className="atc" onClick={rpa}>Don't have an account? <span>Register</span></a>
                     <button type='submit'>Login</button>
                
             </form>
@@ -62,7 +60,7 @@ export default function Login() {
                 <div className="overlay-panel-left">
                     <h1>Welcome Back!</h1>
                     <p>We're Exited to see you back!</p>
-                    <button id='sign-In' onClick={sia}>Sign In</button>
+                    <button id='sign-In' onClick={rpa}>Sign In</button>
                 </div>
 
                 <div className="overlay-panel-right">
