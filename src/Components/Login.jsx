@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaFacebookF, FaGoogle, FaLinkedinIn  } from "react-icons/fa6";
 import './Login.css';
 
 
 export default function Login() {
 
-    const rp_activator = document.getElementById("logw");
+    // useEffect(()=>{
+    //     const rpa = () =>{
+    //         // rp_activator.classList.toggle("right-panel-active");
+    //         const rp_activator = document.getElementById("logw");
+    //         if (rp_activator){
+    //             rp_activator.classList.toggle("right-panel-active");
+    //         }
+    //         else{
+    //             console.log("rp_activator is undefined")
+    //         }  
+    //     };
+    // })
 
     const rpa = () =>{
         // rp_activator.classList.toggle("right-panel-active");
-
+        const rp_activator = document.getElementById("logw");
         if (rp_activator){
             rp_activator.classList.toggle("right-panel-active");
         }
