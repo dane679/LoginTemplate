@@ -1,19 +1,21 @@
 import React from 'react'
 import { FaFacebookF, FaGoogle, FaLinkedinIn  } from "react-icons/fa6";
+import './Login.css';
+
 
 export default function Login() {
 
     const rp_activator = document.getElementById("logw");
 
     const rpa = () =>{
-        rp_activator.classList.toggle("right-panel-active");
+        // rp_activator.classList.toggle("right-panel-active");
 
-        // if (rp_activator){
-        //     rp_activator.classList.toggle("right-panel-active");
-        // }
-        // else{
-        //     console.log("rp_activator is undefined")
-        // }  
+        if (rp_activator){
+            rp_activator.classList.toggle("right-panel-active");
+        }
+        else{
+            console.log("rp_activator is undefined")
+        }  
     };
 
   return (
@@ -30,18 +32,18 @@ export default function Login() {
                     <p>Enter your details to begin your journey with us.</p>
 
                     <div className="fil-wrapper">
-                    <input type="text" name='txt' placeholder='Name' id='name' required/>
+                    <input type="text" name='txt' placeholder='Name' required/>
                     <label htmlFor="name" className='form-label'>Name</label>                       
                     </div>
                     
                     <div className="fil-wrapper">
                         <input type="email" name='email' placeholder='Email' required/>
-                        <label htmlFor="name" className='form-label'>Email</label>                       
+                        <label  className='form-label'>Email</label>                       
                     </div>
 
                     <div className="fil-wrapper">
                         <input type="password" name='pswd' placeholder='Password' required/>
-                        <label htmlFor="name" className='form-label'>Password</label>                       
+                        <label className='form-label'>Password</label>                       
                     </div>
 
                     <a className="atc" onClick={rpa}><span>Already have an account?</span></a>
@@ -61,10 +63,12 @@ export default function Login() {
 
                     <div className="fil-wrapper">                        
                         <input type="email" name='email' placeholder='Email' required/>
+                        <label  className='form-label'>Email</label>
                     </div>
 
                     <div className="fil-wrapper">                        
                         <input type="password" name='password' placeholder='Password' required/>
+                        <label  className='form-label'>Password</label>
                     </div>
                     <a href="" className="pswf"> Forgotten Your Password?</a>
                     <a className="atc" onClick={rpa}>Don't have an account? <span>Register</span></a>
