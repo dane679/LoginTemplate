@@ -61,18 +61,16 @@ body {
  /* display: block; */
  background-color: #eee;
  padding: 12px 15px;
- margin: 12px 0px;
+ margin: 15px 0px;
  width: 100%;
  border-radius: 5px;
  border: none;
  outline: none;
- /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.25) inset; */
- /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25) inset; */
  box-shadow: 0 0 0 2px transparent, 0 0 0 2px transparent;
  transition: all 0.2s ease-in-out;
 }
 .logup-form input:focus{
-  box-shadow: 0 0 0 4px white, 0 0 0 7px #ff4b2b;
+  box-shadow: 0 0 0 5px white, 0 0 0 8px #ff4b2b;
 }
 
 .signup form h1, .sign-in form h1{
@@ -242,6 +240,10 @@ a.atc{
   margin-top: 7px;
   align-self: flex-start;
   display: none;
+  font-size: 13px;
+}
+.signup a.atc{
+  align-self: flex-end;
 }
 a.atc span{
   text-decoration: underline;
@@ -250,7 +252,32 @@ a.atc span{
   font-weight: 600;
 }
 
-
+.fil-wrapper{
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.fil-wrapper .form-label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 15px;
+  padding: 0px 5px;
+  background-color: #eee;
+  pointer-events: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.fil-wrapper input::placeholder{
+  opacity: 0;
+}
+.fil-wrapper input:focus ~ .form-label,
+.fil-wrapper input:not(:placeholder-shown) ~ .form-label{
+  color: #ff4b2b;
+  transform: translate3d(0, -215%, 0);
+  transform: translate3d(-15%, -220%, 0);
+  background-color: white;
+}
 
 @media (max-width: 850px){
   .signup form h1, .sign-in form h1{
