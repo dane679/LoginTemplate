@@ -136,8 +136,19 @@
     text-transform: uppercase;
     transition: transform 80ms ease-in;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
-  
+#sign-Up svg,#sign-In svg{
+  transition: all 0.2s ease-out;
+}
+#sign-Up:hover svg{
+  transform: translateX(20px);
+}
+#sign-In:hover svg{
+  transform: translateX(-20px);
+}
   .login-container.right-panel-active .sign-in{
     transform: translateX(100%);
   }
@@ -271,7 +282,7 @@
     transform: translateY(-50%);
     margin: 0 15px;
     padding: 0px 5px;
-    background-color: #eee;
+    background-color: transparent;
     pointer-events: none;
     font-size: 14px;
     transition: all 0.3s ease;

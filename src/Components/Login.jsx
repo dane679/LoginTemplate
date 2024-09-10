@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { FaFacebookF, FaGoogle, FaLinkedinIn  } from "react-icons/fa6";
+import { FaFacebookF, FaGoogle, FaLinkedinIn, FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 import './Login.css';
 
 
@@ -93,13 +93,13 @@ export default function Login() {
                 <div className="overlay-panel-left">
                     <h1>Welcome Back!</h1>
                     <p>We're Exited to see you back!</p>
-                    <button id='sign-In' onClick={rpa}>Sign In</button>
+                    <button id='sign-In' onClick={rpa}><FaArrowLeftLong/> Sign In</button>
                 </div>
 
                 <div className="overlay-panel-right">
                     <h1>Hello, Friend</h1>
                     <p>Enter your details to begin your journey with us.</p>
-                    <button id='sign-Up' onClick={rpa}>Sign Up</button>
+                    <button id='sign-Up' onClick={rpa}>Sign Up <FaArrowRightLong/></button>
                 </div>
             </div>
         </div>
