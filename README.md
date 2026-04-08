@@ -30,6 +30,14 @@ Whether you're building a new project from scratch or upgrading an existing UI, 
 - Vite
 - CSS
 
+## Inspiration
+
+This project was inspired by a tutorial on how to make an "Animated Sliding Login & Signup Form" in HTML, CSS and vanila JavaScript.
+
+I used the core idea as a starting point and extended it into a react based reusable, production-ready template with improved structure, state management, and UI flexibility.
+
+**Original tutorial:**
+https://www.youtube.com/watch?v=T9GsdKIXaVs
 ## Getting Started
 ### 1. Clone the repository
 
